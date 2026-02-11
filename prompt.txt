@@ -1,0 +1,53 @@
+Create a complete Cypress automation framework project and provide it as a downloadable ZIP file.
+
+Framework requirements:
+
+Project setup:
+- Node.js Cypress project
+- Cypress v13+
+- GitHub Actions CI pipeline
+- Must run locally and in CI
+
+Testing:
+- UI test using SauceDemo (https://www.saucedemo.com)
+- Login test using:
+  username: standard_user
+  password: secret_sauce
+- API test using:
+  https://jsonplaceholder.typicode.com/posts/1
+
+Framework structure:
+- Page Object Model (POM)
+- pages/LoginPage.js
+- e2e/ui.cy.js
+- e2e/api.cy.js
+- support folder
+
+Configuration:
+- baseUrl configured
+- environment variables for credentials
+- reusable commands file
+
+Reporting:
+- Mochawesome reporting configured
+- reports stored in cypress/reports
+- scripts to generate HTML report
+
+package.json scripts:
+- cy:open
+- test
+- report:merge
+- report:generate
+
+CI/CD:
+- GitHub Actions workflow
+- Install dependencies
+- Run Cypress tests
+- Generate Mochawesome report
+
+Also include:
+- README.md with run instructions
+- .gitignore for Cypress + Node project
+
+Finally:
+Generate and provide a downloadable ZIP file of the project.
