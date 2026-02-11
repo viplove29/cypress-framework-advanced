@@ -1,0 +1,17 @@
+{
+  "name": "cypress-saucedemo-framework",
+  "version": "2.0.0",
+  "description": "Cypress framework with POM, env config, API testing, Mochawesome reporting, and GitHub Actions",
+  "scripts": {
+    "test": "cypress run",
+    "cy:open": "cypress open",
+    "report:merge": "npx mochawesome-merge cypress/reports/*.json > mochawesome.json",
+    "report:generate": "npx marge mochawesome.json"
+  },
+  "devDependencies": {
+    "cypress": "^13.6.0",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^6.2.0"
+  }
+}

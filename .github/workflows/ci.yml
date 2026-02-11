@@ -1,0 +1,21 @@
+name: Cypress CI
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  cypress-run:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - run: npm install
+      - run: npx cypress run
+      - run: npm run report:merge
+      - run: npm run report:generate

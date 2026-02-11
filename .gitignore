@@ -1,0 +1,21 @@
+# Node
+node_modules/
+npm-debug.log
+package-lock.json
+
+# Cypress artifacts
+cypress/videos/
+cypress/screenshots/
+cypress/reports/
+
+# Mochawesome output
+mochawesome-report/
+mochawesome.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+
