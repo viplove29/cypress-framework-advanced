@@ -3,7 +3,9 @@ name: Cypress CI
 on:
   push:
     branches: [ master ]
-
+  pull_request:
+  workflow_dispatch:
+    
 jobs:
   cypress-run:
     runs-on: ubuntu-latest
